@@ -1,4 +1,8 @@
-#internship-welcome-page {
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
   color: white;
   background-color: #000;
   /* z-index: -2; */
@@ -11,7 +15,9 @@
   align-items: center;
 }
 #internship-welcome-page .hero-section h1,
-#internship-welcome-page .call-to-action h2 {
+#internship-welcome-page .call-to-action h2,
+#internship-apply-page h2,
+#internship-status-page h2 {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 1.2px;
@@ -46,7 +52,8 @@
   text-align: center;
   max-width: 400px;
 }
-#internship-welcome-page button {
+#internship-welcome-page button,
+.cloud-background button {
   background-color: #25a75b;
   border: none;
   color: white;
@@ -57,10 +64,64 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-#internship-welcome-page button:hover {
+#internship-welcome-page button:hover,
+.cloud-background button:hover {
   background-color: #4eca78;
   border: none;
   color: white;
+}
+/* --------------------------------------- */
+#internship-apply-page,
+#internship-status-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.cloud-background {
+  background: linear-gradient(
+    180deg,
+    rgba(151, 164, 190, 0.16) 0%,
+    rgba(93, 105, 128, 0.16) 24%,
+    rgba(93, 105, 128, 0.16) 100%
+  );
+  padding: 25px 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 50%;
+}
+@media (max-width: 992px) {
+  .cloud-background {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .cloud-background {
+    width: 90%;
+  }
+}
+
+#internship-apply-page .file-attachment {
+  border-style: dotted;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+#internship-apply-page button {
+  padding: 10px 50px;
+}
+/* ----------------------------------------- */
+#internship-status-page .pending {
+  color: #ceff2b;
+}
+#internship-status-page .rejected {
+  color: #ff0000;
+}
+#internship-status-page .approved {
+  color: #00ff00;
 }
 /* main p {
   font-weight: 300;
