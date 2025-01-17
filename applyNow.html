@@ -23,47 +23,235 @@
       <h2 class="mb-5 text-center fs-1">Apply and Join us Now!</h2>
       <form class="row g-3 cloud-background" action="">
         <form onsubmit="formSubmit(event)" class="row g-3">
-          <input type="text" id="status" value="pending" hidden />
           <div class="col-sm-6">
-            <label for="firstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstName" required />
-          </div>
-          <div class="col-sm-6">
-            <label for="lastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="lastName" required />
-          </div>
-          <div class="col-sm-12">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
-          </div>
-          <div class="col-sm-6">
-            <label for="city" class="form-label">City</label>
-            <input type="text" class="form-control" id="city" required />
-          </div>
-          <div class="col-sm-6">
-            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <label for="FirstName" class="form-label">First Name</label>
             <input
-              type="number"
+              type="text"
+              placeholder="Enter Your First Name"
               class="form-control"
-              id="phoneNumber"
+              id="FirstName"
+              required
+            />
+          </div>
+          <div class="col-sm-6">
+            <label for="LastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              placeholder="Enter Your Last Name"
+              class="form-control"
+              id="lastName"
               required
             />
           </div>
           <div class="col-sm-12">
-            <label for="track" class="form-label">Track</label>
-            <select id="track" class="form-select" required>
+            <label for="Email" class="form-label">Email</label>
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="form-control"
+              id="Email"
+              required
+            />
+          </div>
+          <div class="col-sm-6">
+            <label for="City" class="form-label">City</label>
+            <input
+              type="text"
+              placeholder="City You Live In"
+              class="form-control"
+              id="City"
+              required
+            />
+          </div>
+          <div class="col-sm-6">
+            <label for="Phone" class="form-label">Phone Number</label>
+            <input
+              type="number"
+              placeholder="Your Phone Number"
+              class="form-control"
+              id="Phone"
+              required
+            />
+          </div>
+          <div class="col-sm-12">
+            <label for="Track" class="form-label">Track</label>
+            <select id="Track" class="form-select" required>
               <option>Linux Systems</option>
               <option>Backend Development</option>
             </select>
           </div>
-
+          <div class="col-6 col-sm-4">
+            <label for="GraduationYear" class="form-label"
+              >Graduation Year</label
+            >
+            <input
+              type="number"
+              placeholder="Year"
+              class="form-control"
+              id="GraduationYear"
+              required
+            />
+          </div>
+          <div class="col-sm-8">
+            <label for="University" class="form-label">University</label>
+            <input
+              type="text"
+              placeholder="Enter Your University"
+              class="form-control"
+              id="University"
+              required
+            />
+          </div>
+          <div class="col-sm-12">
+            <label for="WhyChoosingYou" class="form-label"
+              >Why Choosing You</label
+            >
+            <textarea
+              type="text"
+              placeholder="Tell Us Why Choosing You..."
+              class="form-control"
+              id="WhyChoosingYou"
+              required
+            ></textarea>
+          </div>
+          <div class="col-sm-12">
+            <label for="PerviousWork" class="form-label"
+              >Your Previous Work</label
+            >
+            <textarea
+              type="text"
+              placeholder="Tell Us about Your Previous Work..."
+              class="form-control"
+              id="PerviousWork"
+              required
+            ></textarea>
+          </div>
+          <div class="col-sm-12">
+            <label for="PerviousWork" class="form-label"
+              >Programming Languages</label
+            >
+            <div class="d-flex gap-2 flex-wrap">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Python"
+                  name="programmingLanguages"
+                  value="Python"
+                />
+                <label class="form-check-label" for="Python">Python</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="JavaScript"
+                  name="programmingLanguages"
+                  value="JavaScript"
+                />
+                <label class="form-check-label" for="JavaScript"
+                  >JavaScript</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Java"
+                  name="programmingLanguages"
+                  value="Java"
+                />
+                <label class="form-check-label" for="Java">Java</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="PHP"
+                  name="programmingLanguages"
+                  value="PHP"
+                />
+                <label class="form-check-label" for="PHP">PHP</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Ruby"
+                  name="programmingLanguages"
+                  value="Ruby"
+                />
+                <label class="form-check-label" for="Ruby">Ruby</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Go"
+                  name="programmingLanguages"
+                  value="Go"
+                />
+                <label class="form-check-label" for="Go">Go</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="C"
+                  name="programmingLanguages"
+                  value="C"
+                />
+                <label class="form-check-label" for="C">C</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="C++"
+                  name="programmingLanguages"
+                  value="C++"
+                />
+                <label class="form-check-label" for="C++">C++</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="C#"
+                  name="programmingLanguages"
+                  value="C#"
+                />
+                <label class="form-check-label" for="C#">C#</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Bash"
+                  name="programmingLanguages"
+                  value="Bash"
+                />
+                <label class="form-check-label" for="Bash">Bash</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Perl"
+                  name="programmingLanguages"
+                  value="Perl"
+                />
+                <label class="form-check-label" for="Perl">Perl</label>
+              </div>
+            </div>
+          </div>
           <div class="col-12">
             <div
               class="file-attachment d-flex align-items-center justify-content-center position-relative rounded"
             >
               <input
                 type="file"
-                id="cv"
+                id="CV"
                 required
                 accept=".pdf"
                 class="cv position-absolute w-100 h-100 opacity-0"
@@ -74,11 +262,12 @@
           </div>
           <div class="col-12 text-center">
             <button type="submit" class="rounded-1">Apply</button>
-            <p id="response my-2"></p>
+            <p id="response"></p>
           </div>
         </form>
       </form>
     </main>
+    <script src="test.js"></script>
   </body>
   <script></script>
   <!-- <script src="//fastly.jsdelivr.net/npm/sweetalert2@11"></script> -->
@@ -87,7 +276,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
-  <script src="test.js"></script>
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <!-- <script>
     AOS.init();
